@@ -1,0 +1,8 @@
+<li data-list-id="<%= list.id %>">
+  <div class="view">
+    <label><%= link_to list.title, list %></label>
+    <%= link_to list, :method => :delete, :remote => true do %>
+      <button class="destroy">X</button>
+    <%- end -%>
+  </div>
+</li>

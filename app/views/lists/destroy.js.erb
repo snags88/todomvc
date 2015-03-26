@@ -1,0 +1,5 @@
+var $element = $("li[data-list-id=" + <%= @list.id %> + "]")
+
+$element.slideUp(400, function(){
+  $element.remove();
+})
